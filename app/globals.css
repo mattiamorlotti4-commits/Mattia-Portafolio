@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-ink-900 antialiased transition-colors duration-300;
+  }
+
+  .dark body {
+    @apply bg-ink-950 text-ink-100;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply px-6 sm:px-10 lg:px-16;
+  }
+
+  .container-narrow {
+    @apply mx-auto w-full max-w-content;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
