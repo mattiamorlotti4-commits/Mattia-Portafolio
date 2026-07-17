@@ -8,6 +8,7 @@ import Experience from "@/components/Experience";
 import Gallery from "@/components/Gallery";
 import Skills from "@/components/Skills";
 import WalletTrackerPromo from "@/components/WalletTrackerPromo";
+import WalletTrackerFab from "@/components/WalletTrackerFab";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -28,6 +29,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <WalletTrackerFab />
     </>
   );
 }

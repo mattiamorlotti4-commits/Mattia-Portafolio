@@ -11,8 +11,7 @@ const links = [
   { href: "#experience", label: "Experience" },
   { href: "#gallery", label: "Gallery" },
   { href: "#skills", label: "Skills" },
-  { href: "/wallet-tracker", label: "Wallet Tracker" },
-  { href: "#contact", label: "Contact" },
+  { href: "/wallet-tracker", label: "Tools" },
 ];
 
 export default function Navbar() {
@@ -26,13 +25,13 @@ export default function Navbar() {
           Mattia Morlotti
         </a>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-5 md:flex lg:gap-6">
           {links.map((link) =>
             link.href.startsWith("/") ? (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm text-ink-600 transition-colors hover:text-accent dark:text-ink-400 dark:hover:text-accent-light"
+                className="whitespace-nowrap text-sm text-ink-600 transition-colors hover:text-accent dark:text-ink-400 dark:hover:text-accent-light"
               >
                 {link.label}
               </Link>
@@ -40,7 +39,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-ink-600 transition-colors hover:text-accent dark:text-ink-400 dark:hover:text-accent-light"
+                className="whitespace-nowrap text-sm text-ink-600 transition-colors hover:text-accent dark:text-ink-400 dark:hover:text-accent-light"
               >
                 {link.label}
               </a>
@@ -51,7 +50,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <a
             href="#contact"
-            className="hidden text-sm font-medium text-ink-900 underline-offset-4 hover:underline dark:text-ink-50 sm:inline"
+            className="hidden whitespace-nowrap text-sm font-medium text-ink-900 underline-offset-4 hover:underline dark:text-ink-50 sm:inline"
           >
             Get in touch
           </a>

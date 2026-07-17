@@ -2,7 +2,7 @@ import Image from "next/image";
 import AnimatedSection from "./AnimatedSection";
 
 const photos = [
-  { src: "/images/gallery-1.jpg", alt: "Mattia Morlotti — portrait" },
+  { src: "/images/gallery-1.jpg", alt: "Mattia Morlotti, portrait" },
   { src: "/images/gallery-2.jpg", alt: "Mattia Morlotti at the office" },
   { src: "/images/gallery-3.jpg", alt: "Mattia Morlotti presenting at a CRM masterclass" },
   { src: "/images/gallery-4.jpg", alt: "Mattia Morlotti at a career fair" },

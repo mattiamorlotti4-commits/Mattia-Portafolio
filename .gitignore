@@ -20,6 +20,7 @@
 # raw source photos and project files (already copied into public/, not needed twice)
 /Pic_Mysite
 /Project My Site
+/wallet-tracker-updates
 
 # debug
 npm-debug.log*

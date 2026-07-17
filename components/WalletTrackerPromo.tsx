@@ -23,7 +23,7 @@ export default function WalletTrackerPromo() {
               </h2>
               <p className="mt-2 max-w-xl text-ink-600 dark:text-ink-300">
                 Track your spending, set monthly budgets, and see where your
-                money actually goes — free to use, right in your browser.
+                money actually goes, free to use, right in your browser.
               </p>
             </div>
             <Link

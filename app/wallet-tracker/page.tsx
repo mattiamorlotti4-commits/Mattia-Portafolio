@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Wallet Tracker — Mattia Morlotti",
+  title: "Wallet Tracker by Mattia Morlotti",
   description:
     "A free budgeting tool to track your spending, set budgets, and analyze your expenses.",
 };
@@ -32,7 +32,7 @@ export default function WalletTrackerPage() {
           </div>
         </div>
         <p className="text-xs text-ink-400 dark:text-ink-500">
-          Your data stays in this browser — nothing is sent anywhere.
+          Your data stays in this browser. Nothing is sent anywhere.
         </p>
       </header>
 

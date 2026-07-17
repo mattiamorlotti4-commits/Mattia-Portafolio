@@ -61,38 +61,38 @@ const ChartIcon = (
 const projects: Project[] = [
   {
     id: "dellara",
-    title: "Dellara Resorts — Marketing Plan for a Family-First Resort Chain",
+    title: "Dellara Resorts: Marketing Plan for a Family-First Resort Chain",
     summary:
       "A full marketing plan for a fictional Spanish all-inclusive resort chain, from market sizing to positioning statement.",
     details:
-      "Group project (with Alice, CJ, and Lara) building a complete marketing plan for Dellara Resorts, a fictional all-inclusive resort chain in Spain (Málaga, Mallorca, the Canary Islands) built around family travel — positioned in the gap between luxury adults-only resorts and budget family hotels. We worked through the plan end to end: micro and macro environment analysis, a competitor set against Barceló, Meliá, and Iberostar, a full SWOT, and target audience segmentation split between a primary audience (parents with young children and multi-child families) and a secondary one (parents with teens, multigenerational families). The most interesting part for me was the demand estimation — sizing the Spanish family-travel market (roughly 23 million family tourists a year), then modeling Dellara's realistic share of it down to an estimated 46,000 annual bookings and about €57.5 million in potential revenue. We closed with a buyer persona and a positioning statement tying the whole plan together. It was a useful exercise in moving from market research to numbers a business could actually act on.",
+      "Group project (with Alice, CJ, and Lara) building a complete marketing plan for Dellara Resorts, a fictional all-inclusive resort chain in Spain (Málaga, Mallorca, the Canary Islands) built around family travel, positioned in the gap between luxury adults-only resorts and budget family hotels. We worked through the plan end to end: micro and macro environment analysis, a competitor set against Barceló, Meliá, and Iberostar, a full SWOT, and target audience segmentation split between a primary audience (parents with young children and multi-child families) and a secondary one (parents with teens, multigenerational families). The most interesting part for me was the demand estimation: sizing the Spanish family-travel market (roughly 23 million family tourists a year), then modeling Dellara's realistic share of it down to an estimated 46,000 annual bookings and about €57.5 million in potential revenue. We closed with a buyer persona and a positioning statement tying the whole plan together. It was a useful exercise in moving from market research to numbers a business could actually act on.",
     icon: TargetIcon,
     fileUrl: "/projects/dellara-resorts-marketing-plan.pptx",
-    fileName: "Dellara Resorts — Marketing Plan.pptx",
+    fileName: "Dellara Resorts, Marketing Plan.pptx",
     fileLabel: "PowerPoint · 17.6 MB",
   },
   {
     id: "five-guys",
-    title: "Five Guys — E-Commerce Strategy",
+    title: "Five Guys: E-Commerce Strategy",
     summary:
       "An e-commerce strategy for Five Guys, tackling its reliance on third-party delivery and its lack of a loyalty program.",
     details:
-      "Group project for my International E-Business course (with Jayden and Daniel), analyzing Five Guys' digital presence and building a new e-commerce strategy for it. We started by mapping where the brand actually stood — a premium fast-casual burger chain with 1,700+ locations, strong in-store customization and quality, but a fairly thin digital ecosystem: ordering split across its own app and third-party platforms like Uber Eats and Deliveroo, with no real loyalty program or personalization behind it. From there we designed a digital-first strategy: an upgraded app with one-click reorder, live order tracking, and saved \"build-your-own\" preferences; a \"Five Guys Rewards\" loyalty program; personalized suggestions based on past orders; and a hybrid delivery model that keeps the third-party platforms but pushes more volume toward direct ordering through app-exclusive offers, protecting margins and first-party customer data. We also built out the marketing side — target segments, channels (influencers, paid social, search, push/email), and content strategy — and closed by separating what should stay global (a single app and UX, one loyalty program) from what needs local adaptation (local delivery partners, payment methods, language, pricing).",
+      "Group project for my International E-Business course (with Jayden and Daniel), analyzing Five Guys' digital presence and building a new e-commerce strategy for it. We started by mapping where the brand actually stood: a premium fast-casual burger chain with 1,700+ locations, strong in-store customization and quality, but a fairly thin digital ecosystem: ordering split across its own app and third-party platforms like Uber Eats and Deliveroo, with no real loyalty program or personalization behind it. From there we designed a digital-first strategy: an upgraded app with one-click reorder, live order tracking, and saved \"build-your-own\" preferences; a \"Five Guys Rewards\" loyalty program; personalized suggestions based on past orders; and a hybrid delivery model that keeps the third-party platforms but pushes more volume toward direct ordering through app-exclusive offers, protecting margins and first-party customer data. We also built out the marketing side, covering target segments, channels (influencers, paid social, search, push/email), and content strategy. We closed by separating what should stay global (a single app and UX, one loyalty program) from what needs local adaptation (local delivery partners, payment methods, language, pricing).",
     icon: CartIcon,
     fileUrl: "/projects/five-guys-ecommerce-strategy.pdf",
-    fileName: "Five Guys — E-Commerce Strategy.pdf",
+    fileName: "Five Guys, E-Commerce Strategy.pdf",
     fileLabel: "PDF · 19.8 MB",
   },
   {
     id: "ferrari",
-    title: "Ferrari — Financial Statement Analysis",
+    title: "Ferrari: Financial Statement Analysis",
     summary:
-      "A financial deep-dive into Ferrari's balance sheet, income statement, and cash flows across FY2023–2024.",
+      "A financial deep-dive into Ferrari's balance sheet, income statement, and cash flows across FY2023 to FY2024.",
     details:
-      "Individual project for my accounting course, analyzing Ferrari N.V.'s financial statements for fiscal years 2023 and 2024. I worked through the balance sheet, income statement, key financial ratios, and cash flow statement to build a full picture of the company's financial health, then paired that with a strengths-and-weaknesses read: exceptional profitability, strong pricing power, and high, stable cash generation on one side, against slightly slower inventory and receivables turnover and a modest uptick in financial leverage on the other. The conclusion was that Ferrari posted strong revenue, profit, and cash flow growth in 2024, with improving liquidity and margins and a genuinely solid balance sheet — while flagging near-term risk from slower expected growth and market uncertainty around its electrification strategy. It was a good exercise in reading past the headline numbers of a company known for its brand rather than its financials, and forming an actual view on whether the fundamentals back that reputation up.",
+      "Individual project for my accounting course, analyzing Ferrari N.V.'s financial statements for fiscal years 2023 and 2024. I worked through the balance sheet, income statement, key financial ratios, and cash flow statement to build a full picture of the company's financial health, then paired that with a strengths-and-weaknesses read: exceptional profitability, strong pricing power, and high, stable cash generation on one side, against slightly slower inventory and receivables turnover and a modest uptick in financial leverage on the other. The conclusion was that Ferrari posted strong revenue, profit, and cash flow growth in 2024, with improving liquidity and margins and a genuinely solid balance sheet, while flagging near-term risk from slower expected growth and market uncertainty around its electrification strategy. It was a good exercise in reading past the headline numbers of a company known for its brand rather than its financials, and forming an actual view on whether the fundamentals back that reputation up.",
     icon: ChartIcon,
     fileUrl: "/projects/ferrari-financial-analysis.pdf",
-    fileName: "Ferrari — Financial Statement Analysis.pdf",
+    fileName: "Ferrari, Financial Statement Analysis.pdf",
     fileLabel: "PDF · 2.9 MB",
   },
 ];

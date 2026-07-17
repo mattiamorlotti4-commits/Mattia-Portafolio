@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 const siteUrl = "https://mattiamorlotti.com";
-const title = "Mattia Morlotti — International Business & Finance Student";
+const title = "Mattia Morlotti, International Business & Finance Student";
 const description =
   "Mattia Morlotti is an International Business & Economics student at Saint Louis University, building toward a career in strategy, investing, and company-building.";
 

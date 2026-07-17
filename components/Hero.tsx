@@ -17,13 +17,13 @@ export default function Hero() {
           className="order-2 md:order-1 md:col-span-3"
         >
           <p className="mb-4 text-sm font-medium uppercase tracking-widest text-accent dark:text-accent-light">
-            Mattia Morlotti
+            Solo lo stupore conosce · Don Luigi Giussani
           </p>
           <h1 className="text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-ink-950 dark:text-white sm:text-5xl lg:text-6xl">
             Mattia Morlotti
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-600 dark:text-ink-300">
-            International Business &amp; Finance Student — building toward a
+            International Business &amp; Finance Student, building toward a
             career in strategy, investing, and company-building.
           </p>
 

@@ -19,7 +19,7 @@ export default function About() {
             <p>
               I&apos;m currently a Business Controlling Intern at Mitsubishi
               Electric Europe, where I work on management reporting, KPI
-              tracking, and cross-functional planning cycles — turning sales,
+              tracking, and cross-functional planning cycles, turning sales,
               cost, and operational data into insights leadership can act on.
               It sits on top of a B.S. in International Business &amp;
               Economics at Saint Louis University&apos;s Chaifetz School of
@@ -28,7 +28,7 @@ export default function About() {
             </p>
             <p>
               What I&apos;m looking for next is a business development,
-              corporate finance, or strategy role — ideally inside a startup
+              corporate finance, or strategy role, ideally inside a startup
               or scale-up, close to founders and decision-makers rather than
               several layers removed from them.
             </p>

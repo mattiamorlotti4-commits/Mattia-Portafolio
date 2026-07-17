@@ -32,7 +32,7 @@ const stops: Stop[] = [
     id: "italy-1",
     year: "Past",
     place: "Italy",
-    date: "Home — until Sept 2022",
+    date: "Home, until Sept 2022",
     caption: "Departing for the adventure that would change my life.",
     photo: "/images/journey-1-italy.jpg",
     pos: { x: 428.2, y: 410.4 },
@@ -40,7 +40,7 @@ const stops: Stop[] = [
   {
     id: "wichita",
     year: "2022",
-    place: "Wichita, Kansas — USA",
+    place: "Wichita, Kansas (USA)",
     date: "September 2022",
     caption:
       "I graduated high school here, and played on the basketball and soccer teams alongside my classes.",
@@ -53,14 +53,14 @@ const stops: Stop[] = [
     place: "Italy",
     date: "June 2023",
     caption:
-      "Back home to finish school — I sat the Maturità, the Italian high school exit exam, and graduated a second time.",
+      "Back home to finish school: I sat the Maturità, the Italian high school exit exam, and graduated a second time.",
     photo: "/images/journey-3-italy-return.jpg",
     pos: { x: 428.2, y: 410.4 },
   },
   {
     id: "saint-louis",
     year: "2024",
-    place: "Saint Louis, Missouri — USA",
+    place: "Saint Louis, Missouri (USA)",
     date: "September 2024",
     caption: "My first year of university, right at the start of the International Business program.",
     photo: "/images/journey-4-saint-louis.jpg",
@@ -70,9 +70,9 @@ const stops: Stop[] = [
     id: "madrid",
     year: "Present",
     place: "Madrid, Spain",
-    date: "September 2025 — Present",
+    date: "September 2025 to Present",
     caption:
-      "My second year of university — I moved to the Madrid campus, where I've been living since.",
+      "My second year of university: I moved to the Madrid campus, where I've been living since.",
     photo: "/images/journey-5-madrid.jpg",
     pos: { x: 398.7, y: 424.8 },
   },

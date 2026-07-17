@@ -15,7 +15,7 @@ export default function Contact() {
     e.preventDefault();
 
     const subject = `Portfolio contact from ${name || "website visitor"}`;
-    const body = `${message}\n\n— ${name}${email ? ` (${email})` : ""}`;
+    const body = `${message}\n\nFrom, ${name}${email ? ` (${email})` : ""}`;
 
     const mailtoUrl = `mailto:${EMAIL}?subject=${encodeURIComponent(
       subject
