@@ -10,6 +10,7 @@ const links = [
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
   { href: "#gallery", label: "Gallery" },
+  { href: "#hobbies", label: "Hobbies" },
   { href: "#skills", label: "Skills" },
   { href: "/wallet-tracker", label: "Tools" },
 ];
