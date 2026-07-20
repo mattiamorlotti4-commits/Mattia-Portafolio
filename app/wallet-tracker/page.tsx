@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function WalletTrackerPage() {
   return (
-    <div className="flex h-screen flex-col bg-white dark:bg-ink-950">
+    <div className="flex h-screen flex-col bg-ink-50 dark:bg-ink-950">
       <header className="flex flex-shrink-0 items-center justify-between border-b border-ink-100 px-4 py-3 dark:border-ink-800 sm:px-6">
         <div className="flex items-center gap-3 sm:gap-4">
           <Link

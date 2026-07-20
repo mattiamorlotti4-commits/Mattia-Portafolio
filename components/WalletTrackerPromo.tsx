@@ -6,15 +6,19 @@ export default function WalletTrackerPromo() {
     <section className="section-padding py-24 sm:py-32">
       <div className="container-narrow max-w-4xl">
         <AnimatedSection>
-          <div className="flex flex-col items-start gap-8 rounded-2xl border border-ink-200 bg-ink-50 p-8 dark:border-ink-800 dark:bg-ink-900/40 sm:flex-row sm:items-center sm:p-10">
-            <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-accent text-white dark:bg-accent-light dark:text-ink-950">
+          <div className="relative flex flex-col items-start gap-8 overflow-hidden rounded-2xl border border-ink-200/80 bg-white/70 p-8 shadow-lg ring-1 ring-black/[0.02] backdrop-blur-sm transition-shadow hover:shadow-xl dark:border-ink-800 dark:bg-ink-900/40 dark:ring-white/[0.02] sm:flex-row sm:items-center sm:p-10">
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-accent/[0.06] blur-2xl dark:bg-accent-light/[0.06]"
+            />
+            <div className="relative flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-accent text-white shadow-md dark:bg-accent-light dark:text-ink-950">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="h-7 w-7">
                 <rect x="3" y="6" width="18" height="13" rx="2" />
                 <path d="M3 10h18" />
                 <circle cx="16.5" cy="14.5" r="1.25" fill="currentColor" stroke="none" />
               </svg>
             </div>
-            <div className="flex-1">
+            <div className="relative flex-1">
               <p className="mb-1 text-sm font-medium uppercase tracking-widest text-accent dark:text-accent-light">
                 A free tool I built
               </p>

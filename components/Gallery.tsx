@@ -1,5 +1,6 @@
 import Image from "next/image";
 import AnimatedSection from "./AnimatedSection";
+import Eyebrow from "./Eyebrow";
 
 const photos = [
   { src: "/images/gallery-1.jpg", alt: "Mattia Morlotti, portrait" },
@@ -14,13 +15,11 @@ export default function Gallery() {
   return (
     <section
       id="gallery"
-      className="section-padding border-y border-ink-100 bg-ink-50 py-24 dark:border-ink-800 dark:bg-ink-900/40 sm:py-32"
+      className="section-padding border-y border-ink-200 bg-ink-100 py-24 dark:border-ink-800 dark:bg-ink-900/40 sm:py-32"
     >
       <div className="container-narrow">
         <AnimatedSection>
-          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-accent dark:text-accent-light">
-            Moments
-          </p>
+          <Eyebrow>Moments</Eyebrow>
           <h2 className="mb-12 text-3xl font-semibold tracking-tight text-ink-950 dark:text-white sm:text-4xl">
             A few snapshots
           </h2>
@@ -29,7 +28,7 @@ export default function Gallery() {
         <div className="grid grid-cols-2 gap-4 sm:gap-5 md:grid-cols-3">
           {photos.map((photo, i) => (
             <AnimatedSection key={photo.src} delay={i * 0.06}>
-              <div className="relative aspect-square overflow-hidden rounded-xl bg-ink-100 dark:bg-ink-900">
+              <div className="relative aspect-square overflow-hidden rounded-xl bg-ink-100 shadow-md ring-1 ring-black/[0.03] transition-shadow duration-500 hover:shadow-xl dark:bg-ink-900 dark:ring-white/[0.03]">
                 <Image
                   src={photo.src}
                   alt={photo.alt}

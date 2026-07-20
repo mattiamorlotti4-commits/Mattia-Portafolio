@@ -7,8 +7,16 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="section-padding flex min-h-screen items-center pt-32 pb-20"
+      className="section-padding relative flex min-h-screen items-center overflow-hidden pt-32 pb-20"
     >
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-32 right-[-6rem] -z-10 h-[34rem] w-[34rem] rounded-full bg-accent/20 blur-3xl dark:bg-accent-light/20"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -bottom-40 -left-32 -z-10 h-[26rem] w-[26rem] rounded-full bg-accent/[0.14] blur-3xl dark:bg-accent-light/[0.14]"
+      />
       <div className="container-narrow grid grid-cols-1 items-center gap-12 md:grid-cols-5 md:gap-16">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -50,15 +58,21 @@ export default function Hero() {
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="order-1 md:order-2 md:col-span-2"
         >
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl bg-ink-100 dark:bg-ink-900">
-            <Image
-              src="/images/hero.jpg"
-              alt="Mattia Morlotti"
-              fill
-              priority
-              sizes="(min-width: 768px) 40vw, 80vw"
-              className="object-cover"
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-sm">
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 translate-x-3 translate-y-3 rounded-2xl bg-accent/15 dark:bg-accent-light/15"
             />
+            <div className="relative h-full w-full overflow-hidden rounded-2xl bg-ink-100 shadow-2xl shadow-ink-950/10 dark:bg-ink-900 dark:shadow-black/30">
+              <Image
+                src="/images/hero.jpg"
+                alt="Mattia Morlotti"
+                fill
+                priority
+                sizes="(min-width: 768px) 40vw, 80vw"
+                className="object-cover"
+              />
+            </div>
           </div>
         </motion.div>
       </div>

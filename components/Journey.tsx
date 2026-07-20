@@ -156,8 +156,12 @@ export default function Journey() {
   };
 
   return (
-    <section id="journey" className="section-padding py-24 sm:py-32">
-      <div className="container-narrow">
+    <section id="journey" className="section-padding relative overflow-hidden py-24 sm:py-32">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -left-32 top-1/3 -z-10 h-96 w-96 rounded-full bg-accent/[0.09] blur-3xl dark:bg-accent-light/[0.09]"
+      />
+      <div className="container-narrow relative">
         <AnimatedSection>
           <h2 className="mb-12 text-3xl font-semibold tracking-tight text-ink-950 dark:text-white sm:text-4xl">
             My Journey So Far
@@ -167,7 +171,7 @@ export default function Journey() {
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-5 lg:gap-12">
           {/* Map — same row as the photo, so you see the plane move and the story side by side */}
           <AnimatedSection className="lg:col-span-3">
-            <div className="relative overflow-hidden rounded-2xl border border-ink-100 bg-white dark:border-ink-800 dark:bg-ink-950">
+            <div className="relative overflow-hidden rounded-2xl border border-ink-100 bg-white shadow-xl shadow-ink-950/5 dark:border-ink-800 dark:bg-ink-950 dark:shadow-black/30">
               <svg viewBox={WORLD_MAP_VIEWBOX} className="h-auto w-full" aria-hidden="true">
                 {/* real world coastlines — thin outline only, no fill */}
                 <path
@@ -249,7 +253,7 @@ export default function Journey() {
                 exit={{ opacity: 0, y: -12 }}
                 transition={{ duration: 0.35 }}
               >
-                <div className="relative mb-6 aspect-[4/5] w-full overflow-hidden rounded-2xl bg-ink-100 dark:bg-ink-900">
+                <div className="relative mb-6 aspect-[4/5] w-full overflow-hidden rounded-2xl bg-ink-100 shadow-xl shadow-ink-950/10 dark:bg-ink-900 dark:shadow-black/30">
                   <Image
                     src={active.photo}
                     alt={active.place}

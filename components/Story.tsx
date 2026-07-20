@@ -1,14 +1,13 @@
 import Image from "next/image";
 import AnimatedSection from "./AnimatedSection";
+import Eyebrow from "./Eyebrow";
 
 export default function Story() {
   return (
     <section id="story" className="section-padding py-24 sm:py-32">
       <div className="container-narrow grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
         <AnimatedSection>
-          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-accent dark:text-accent-light">
-            My Story
-          </p>
+          <Eyebrow>My Story</Eyebrow>
           <h2 className="mb-6 text-3xl font-semibold tracking-tight text-ink-950 dark:text-white sm:text-4xl">
             Beyond the resume
           </h2>
@@ -62,14 +61,20 @@ export default function Story() {
         </AnimatedSection>
 
         <AnimatedSection delay={0.15}>
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl bg-ink-100 dark:bg-ink-900">
-            <Image
-              src="/images/story.jpg"
-              alt="Mattia Morlotti, personal story"
-              fill
-              sizes="(min-width: 768px) 40vw, 80vw"
-              className="object-cover"
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-sm">
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 -translate-x-3 translate-y-3 rounded-2xl bg-accent/15 dark:bg-accent-light/15"
             />
+            <div className="relative h-full w-full overflow-hidden rounded-2xl bg-ink-100 shadow-2xl shadow-ink-950/10 dark:bg-ink-900 dark:shadow-black/30">
+              <Image
+                src="/images/story.jpg"
+                alt="Mattia Morlotti, personal story"
+                fill
+                sizes="(min-width: 768px) 40vw, 80vw"
+                className="object-cover"
+              />
+            </div>
           </div>
         </AnimatedSection>
       </div>

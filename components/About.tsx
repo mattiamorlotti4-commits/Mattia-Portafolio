@@ -1,16 +1,19 @@
 import AnimatedSection from "./AnimatedSection";
+import Eyebrow from "./Eyebrow";
 
 export default function About() {
   return (
     <section
       id="about"
-      className="section-padding border-y border-ink-100 bg-ink-50 py-24 dark:border-ink-800 dark:bg-ink-900/40 sm:py-32"
+      className="section-padding relative overflow-hidden border-y border-ink-200 bg-gradient-to-br from-accent/[0.07] via-ink-100 to-accent/10 py-24 dark:border-ink-800 dark:from-accent-light/[0.05] dark:via-ink-900/40 dark:to-accent-light/[0.08] sm:py-32"
     >
-      <div className="container-narrow max-w-3xl">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-32 top-1/2 -z-0 h-96 w-96 -translate-y-1/2 rounded-full bg-accent/[0.12] blur-3xl dark:bg-accent-light/[0.1]"
+      />
+      <div className="container-narrow relative max-w-3xl">
         <AnimatedSection>
-          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-accent dark:text-accent-light">
-            What I Do
-          </p>
+          <Eyebrow>What I Do</Eyebrow>
           <h2 className="mb-8 text-3xl font-semibold tracking-tight text-ink-950 dark:text-white sm:text-4xl">
             Focused on strategy, finance, and building things that last
           </h2>

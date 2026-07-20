@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import AnimatedSection from "./AnimatedSection";
+import Eyebrow from "./Eyebrow";
 
 const EMAIL = "mattiamorlotti4@gmail.com";
 const LINKEDIN_URL = "https://linkedin.com/in/mattia-morlotti";
@@ -25,16 +26,30 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="section-padding py-24 sm:py-32">
-      <div className="container-narrow grid max-w-4xl grid-cols-1 gap-16 md:grid-cols-2">
+    <section
+      id="contact"
+      className="section-padding relative overflow-hidden bg-accent py-24 dark:bg-accent-dark sm:py-32"
+    >
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 opacity-[0.07]"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle, white 1px, transparent 1px)",
+          backgroundSize: "28px 28px",
+        }}
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -bottom-40 -right-20 h-96 w-96 rounded-full bg-white/[0.06] blur-3xl"
+      />
+      <div className="container-narrow relative grid max-w-4xl grid-cols-1 gap-16 md:grid-cols-2">
         <AnimatedSection>
-          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-accent dark:text-accent-light">
-            Contact
-          </p>
-          <h2 className="mb-6 text-3xl font-semibold tracking-tight text-ink-950 dark:text-white sm:text-4xl">
+          <Eyebrow tone="white">Contact</Eyebrow>
+          <h2 className="mb-6 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
             Let&apos;s talk
           </h2>
-          <p className="mb-8 text-lg leading-relaxed text-ink-600 dark:text-ink-300">
+          <p className="mb-8 text-lg leading-relaxed text-white/75">
             Open to conversations about business development, corporate
             finance, and strategy roles at startups and scale-ups.
           </p>
@@ -42,7 +57,7 @@ export default function Contact() {
           <div className="space-y-3">
             <a
               href={`mailto:${EMAIL}`}
-              className="block text-ink-900 underline-offset-4 hover:text-accent hover:underline dark:text-ink-100 dark:hover:text-accent-light"
+              className="block text-white underline-offset-4 hover:underline"
             >
               {EMAIL}
             </a>
@@ -50,7 +65,7 @@ export default function Contact() {
               href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-ink-900 underline-offset-4 hover:text-accent hover:underline dark:text-ink-100 dark:hover:text-accent-light"
+              className="block text-white underline-offset-4 hover:underline"
             >
               linkedin.com/in/mattia-morlotti
             </a>
@@ -60,10 +75,7 @@ export default function Contact() {
         <AnimatedSection delay={0.15}>
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
-              <label
-                htmlFor="name"
-                className="mb-2 block text-sm font-medium text-ink-700 dark:text-ink-300"
-              >
+              <label htmlFor="name" className="mb-2 block text-sm font-medium text-white/75">
                 Name
               </label>
               <input
@@ -72,15 +84,12 @@ export default function Contact() {
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full rounded-lg border border-ink-200 bg-transparent px-4 py-3 text-ink-900 outline-none transition-colors focus:border-accent dark:border-ink-700 dark:text-ink-100 dark:focus:border-accent-light"
+                className="w-full rounded-lg border border-white/25 bg-white/5 px-4 py-3 text-white outline-none transition-colors placeholder:text-white/30 focus:border-white"
               />
             </div>
 
             <div>
-              <label
-                htmlFor="email"
-                className="mb-2 block text-sm font-medium text-ink-700 dark:text-ink-300"
-              >
+              <label htmlFor="email" className="mb-2 block text-sm font-medium text-white/75">
                 Email
               </label>
               <input
@@ -89,15 +98,12 @@ export default function Contact() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full rounded-lg border border-ink-200 bg-transparent px-4 py-3 text-ink-900 outline-none transition-colors focus:border-accent dark:border-ink-700 dark:text-ink-100 dark:focus:border-accent-light"
+                className="w-full rounded-lg border border-white/25 bg-white/5 px-4 py-3 text-white outline-none transition-colors placeholder:text-white/30 focus:border-white"
               />
             </div>
 
             <div>
-              <label
-                htmlFor="message"
-                className="mb-2 block text-sm font-medium text-ink-700 dark:text-ink-300"
-              >
+              <label htmlFor="message" className="mb-2 block text-sm font-medium text-white/75">
                 Message
               </label>
               <textarea
@@ -106,13 +112,13 @@ export default function Contact() {
                 required
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="w-full resize-none rounded-lg border border-ink-200 bg-transparent px-4 py-3 text-ink-900 outline-none transition-colors focus:border-accent dark:border-ink-700 dark:text-ink-100 dark:focus:border-accent-light"
+                className="w-full resize-none rounded-lg border border-white/25 bg-white/5 px-4 py-3 text-white outline-none transition-colors placeholder:text-white/30 focus:border-white"
               />
             </div>
 
             <button
               type="submit"
-              className="inline-flex items-center justify-center rounded-full bg-ink-950 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-accent dark:bg-white dark:text-ink-950 dark:hover:bg-accent-light dark:hover:text-white"
+              className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-medium text-accent transition-colors hover:bg-white/90"
             >
               Send message
             </button>

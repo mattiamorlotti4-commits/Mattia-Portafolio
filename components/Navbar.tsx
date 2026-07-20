@@ -16,7 +16,7 @@ const links = [
 
 export default function Navbar() {
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-ink-100/80 bg-white/80 backdrop-blur-md dark:border-ink-800/80 dark:bg-ink-950/80">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-ink-200/80 bg-ink-50/80 shadow-sm shadow-ink-950/[0.02] backdrop-blur-md dark:border-ink-800/80 dark:bg-ink-950/80">
       <div className="container-narrow section-padding flex h-16 items-center justify-between">
         <a
           href="#top"
@@ -25,7 +25,7 @@ export default function Navbar() {
           Mattia Morlotti
         </a>
 
-        <nav className="hidden items-center gap-5 md:flex lg:gap-6">
+        <nav className="hidden items-center gap-5 lg:flex lg:gap-6">
           {links.map((link) =>
             link.href.startsWith("/") ? (
               <Link

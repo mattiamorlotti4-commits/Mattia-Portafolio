@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState, type ReactNode } from "react";
 import AnimatedSection from "./AnimatedSection";
+import Eyebrow from "./Eyebrow";
 
 type Project = {
   id: string;
@@ -104,13 +105,11 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="section-padding border-y border-ink-100 bg-ink-50 py-24 dark:border-ink-800 dark:bg-ink-900/40 sm:py-32"
+      className="section-padding border-y border-ink-200 bg-ink-100 py-24 dark:border-ink-800 dark:bg-ink-900/40 sm:py-32"
     >
       <div className="container-narrow max-w-4xl">
         <AnimatedSection>
-          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-accent dark:text-accent-light">
-            School Projects
-          </p>
+          <Eyebrow>School Projects</Eyebrow>
           <h2 className="mb-4 text-3xl font-semibold tracking-tight text-ink-950 dark:text-white sm:text-4xl">
             Things I&apos;ve built and worked on
           </h2>
@@ -124,9 +123,9 @@ export default function Projects() {
             <AnimatedSection key={project.id} delay={i * 0.08}>
               <button
                 onClick={() => setOpenId(project.id)}
-                className="flex h-full w-full flex-col rounded-2xl border border-ink-200 p-6 text-left transition-colors hover:border-accent hover:bg-white dark:border-ink-800 dark:hover:border-accent-light dark:hover:bg-ink-900"
+                className="flex h-full w-full flex-col rounded-2xl border border-ink-200/80 bg-white/60 p-6 text-left shadow-sm ring-1 ring-black/[0.02] backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-accent hover:bg-white hover:shadow-xl dark:border-ink-800 dark:bg-ink-900/30 dark:ring-white/[0.02] dark:hover:border-accent-light dark:hover:bg-ink-900"
               >
-                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-ink-100 text-ink-700 dark:bg-ink-800 dark:text-ink-200">
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-ink-100 text-ink-700 shadow-sm dark:bg-ink-800 dark:text-ink-200">
                   <span className="h-5 w-5">{project.icon}</span>
                 </div>
                 <h3 className="text-lg font-semibold text-ink-950 dark:text-white">
@@ -167,7 +166,7 @@ export default function Projects() {
               exit={{ opacity: 0, y: 16, scale: 0.98 }}
               transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
               onClick={(e) => e.stopPropagation()}
-              className="max-h-[85vh] w-full max-w-lg overflow-y-auto rounded-2xl bg-white p-8 dark:bg-ink-900"
+              className="max-h-[85vh] w-full max-w-lg overflow-y-auto rounded-2xl bg-white p-8 shadow-2xl dark:bg-ink-900"
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-ink-100 text-ink-700 dark:bg-ink-800 dark:text-ink-200">
