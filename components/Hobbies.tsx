@@ -154,13 +154,12 @@ export default function Hobbies() {
               onClick={(e) => e.stopPropagation()}
               className="w-full max-w-2xl overflow-hidden rounded-2xl bg-white shadow-2xl dark:bg-ink-900"
             >
-              <div className="relative aspect-[16/10] w-full bg-ink-100 dark:bg-ink-800">
-                <Image
+              <div className="relative flex max-h-[75vh] w-full items-center justify-center bg-ink-100 dark:bg-ink-800">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
                   src={open.photos[photoIndex]}
                   alt={open.name}
-                  fill
-                  sizes="(min-width: 1024px) 40vw, 90vw"
-                  className="object-cover"
+                  className="max-h-[75vh] w-auto max-w-full object-contain"
                 />
                 <button
                   onClick={() => setOpenId(null)}
