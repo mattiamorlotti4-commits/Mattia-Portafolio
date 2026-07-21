@@ -9,9 +9,9 @@ const links = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
+  { href: "#mun", label: "MUN" },
   { href: "#gallery", label: "Gallery" },
   { href: "#hobbies", label: "Hobbies" },
-  { href: "#mun", label: "MUN" },
   { href: "#skills", label: "Skills" },
   { href: "/wallet-tracker", label: "Tools" },
 ];

@@ -71,10 +71,21 @@ export default function MUN() {
   };
 
   return (
-    <section id="mun" className="section-padding py-24 sm:py-32">
-      <div className="container-narrow">
+    <section
+      id="mun"
+      className="section-padding relative overflow-hidden bg-gradient-to-br from-amber-500/[0.06] via-transparent to-amber-500/10 py-24 dark:from-amber-400/[0.05] dark:to-amber-400/[0.08] sm:py-32"
+    >
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -left-24 top-0 h-96 w-96 rounded-full bg-amber-400/20 blur-3xl dark:bg-amber-300/10"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-amber-500/[0.12] blur-3xl dark:bg-amber-400/[0.08]"
+      />
+      <div className="container-narrow relative">
         <AnimatedSection>
-          <Eyebrow>Beyond the Classroom</Eyebrow>
+          <Eyebrow tone="amber">Beyond the Classroom</Eyebrow>
           <h2 className="mb-4 text-3xl font-semibold tracking-tight text-ink-950 dark:text-white sm:text-4xl">
             Model United Nations
           </h2>
@@ -96,7 +107,7 @@ export default function MUN() {
             <AnimatedSection key={conf.id} delay={i * 0.08}>
               <button
                 onClick={() => openConference(conf.id)}
-                className="group relative block aspect-[4/5] w-full overflow-hidden rounded-2xl bg-ink-100 shadow-md ring-1 ring-black/[0.03] transition-shadow hover:shadow-xl dark:bg-ink-900 dark:ring-white/[0.03]"
+                className="group relative block aspect-[4/5] w-full overflow-hidden rounded-2xl bg-ink-100 shadow-md ring-1 ring-black/[0.03] transition-all hover:shadow-xl hover:ring-2 hover:ring-amber-400/60 dark:bg-ink-900 dark:ring-white/[0.03]"
               >
                 <Image
                   src={conf.photos[0]}
@@ -159,7 +170,7 @@ export default function MUN() {
               </div>
 
               <div className="p-6 sm:p-8">
-                <p className="text-sm font-medium uppercase tracking-widest text-accent dark:text-accent-light">
+                <p className="text-sm font-medium uppercase tracking-widest text-amber-600 dark:text-amber-400">
                   {open.meta}
                 </p>
                 <h3 className="mt-1 text-2xl font-semibold text-ink-950 dark:text-white">
@@ -175,9 +186,9 @@ export default function MUN() {
                     download={open.fileName}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-6 flex items-center gap-4 rounded-xl border border-accent/30 bg-accent/5 p-4 transition-colors hover:border-accent hover:bg-accent/10 dark:border-accent-light/30 dark:bg-accent-light/5 dark:hover:border-accent-light dark:hover:bg-accent-light/10"
+                    className="mt-6 flex items-center gap-4 rounded-xl border border-amber-500/30 bg-amber-500/5 p-4 transition-colors hover:border-amber-500 hover:bg-amber-500/10 dark:border-amber-400/30 dark:bg-amber-400/5 dark:hover:border-amber-400 dark:hover:bg-amber-400/10"
                   >
-                    <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-accent text-white dark:bg-accent-light dark:text-ink-950">
+                    <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-amber-500 text-white dark:bg-amber-400 dark:text-ink-950">
                       <span className="h-5 w-5">{DownloadIcon}</span>
                     </span>
                     <span className="min-w-0 flex-1">

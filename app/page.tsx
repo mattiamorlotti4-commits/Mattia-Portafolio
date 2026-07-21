@@ -25,9 +25,9 @@ export default function Home() {
         <About />
         <Projects />
         <Experience />
+        <MUN />
         <Gallery />
         <Hobbies />
-        <MUN />
         <Skills />
         <WalletTrackerPromo />
         <Contact />
