@@ -7,6 +7,7 @@ import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
 import Gallery from "@/components/Gallery";
 import Hobbies from "@/components/Hobbies";
+import MUN from "@/components/MUN";
 import Skills from "@/components/Skills";
 import WalletTrackerPromo from "@/components/WalletTrackerPromo";
 import WalletTrackerFab from "@/components/WalletTrackerFab";
@@ -26,6 +27,7 @@ export default function Home() {
         <Experience />
         <Gallery />
         <Hobbies />
+        <MUN />
         <Skills />
         <WalletTrackerPromo />
         <Contact />

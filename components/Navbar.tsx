@@ -11,6 +11,7 @@ const links = [
   { href: "#experience", label: "Experience" },
   { href: "#gallery", label: "Gallery" },
   { href: "#hobbies", label: "Hobbies" },
+  { href: "#mun", label: "MUN" },
   { href: "#skills", label: "Skills" },
   { href: "/wallet-tracker", label: "Tools" },
 ];
