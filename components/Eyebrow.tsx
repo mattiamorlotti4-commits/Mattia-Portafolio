@@ -4,7 +4,7 @@ const toneClasses = {
   accent:
     "bg-accent/10 text-accent dark:bg-accent-light/10 dark:text-accent-light",
   white: "bg-white/15 text-white",
-  amber: "bg-amber-500/15 text-amber-700 dark:bg-amber-400/15 dark:text-amber-300",
+  amber: "bg-yellow-500/15 text-yellow-700 dark:bg-yellow-400/15 dark:text-yellow-300",
 };
 
 export default function Eyebrow({
